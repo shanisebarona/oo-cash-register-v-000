@@ -14,8 +14,12 @@ attr_accessor :discount, :total
   end
   
   def apply_discount 
-    @total = @total - (@discount * @total / 100)
+   if @total = @total - (@discount * @total / 100)
     return "After the discount, the total comes to $#{@total}."
+  else
+    return 
   end
+  
+  
   
 end
