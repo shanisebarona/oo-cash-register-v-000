@@ -17,13 +17,13 @@ attr_accessor :discount, :total
   end
   
   def apply_discount 
-   if @discount > 0
-     @total = @total - (@discount * @total / 100)
-    return "After the discount, the total comes to $#{@total}."
-  else
-    return "There is no discount to apply."
+     if @discount > 0
+       @total = @total - (@discount * @total / 100)
+      return "After the discount, the total comes to $#{@total}."
+    else
+      return "There is no discount to apply."
+    end
   end
-end
   
   def items
     @items
