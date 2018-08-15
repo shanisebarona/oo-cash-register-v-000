@@ -12,7 +12,8 @@ attr_accessor :discount, :total
   
   def add_item(title, price, quantity = 1)
     @total += price * quantity
-    @items = @items.fill(title, quantity)
+    @items.fill(title, quantity)
+    binding.pry
   end
   
   def apply_discount 
